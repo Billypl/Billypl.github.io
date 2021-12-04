@@ -1,0 +1,394 @@
+:root{
+    --content3: #6d0f0f;
+    --content1: #111111;
+    --footer: rgb(29,29,29);
+    --background: rgb(29,29,29);
+    --progress:rgb(196, 20, 20); 
+    --un-progress: rgb(87, 87, 87);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+p{
+    margin: 0;
+}
+h1{
+    font-size: 2.5em;
+}
+
+article{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "proxima_novasemibold", Arial, Helvetica, sans-serif;
+}
+section{
+    /* background-color: rgb(37, 37, 37); */
+    max-width: 800px;
+    font-size: 20px;
+    margin: 20px 0 80px 0;
+    padding: 20px;
+    position: relative;
+}
+section > .s1{
+    font-size: 1.2em;
+}
+section h1{
+    color:red;
+}
+
+@media (max-width: 720px){
+    section > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.p1{
+    grid-column: 1/3;
+}
+.p2{
+    grid-column: 2/4;
+}
+
+/*STREFA CONTENT 1*/
+
+.c1 > section > div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "p1 img1"
+        "p2 img1";
+}
+.c1 img{
+    width: 100%;
+    max-height: 100%;
+}
+.c1 .p1 { grid-area: p1; margin-bottom: 15px;}
+
+.c1 .p2 {grid-area: p2; }
+
+.c1 .img1 { grid-area: img1; position: relative;}
+/* .img1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    top:0;
+    left: 0;
+    padding-top: 10px;
+} */
+
+/* STREFA CONTENT 2 */
+/* plik z slajderem!! */
+.c2 h1{
+    text-align: center;
+}
+.c2 section{
+    width: 100%;
+}
+.c2 video{
+    max-width: 60%;
+    object-fit: fill;
+    position: relative;
+}
+.c2 p{
+    margin: 0 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.project{
+    display: flex;
+}
+.c2 h2{
+    color: red;
+    font-size: 2.2em;
+    margin-top: 0;
+}
+.c2 a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    transition: color 0.1s;
+}
+.c2 a:hover{
+    color: rgb(134, 0, 0);
+}
+#s3 p{
+    font-size: 1.178em;
+}
+
+/*/////////////
+///////////////
+STREFA CONTENT 3
+///////////////
+/////////////*/
+
+.c3 h1{
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+.c3 h2{
+    font-size: 2em;
+    margin: 0;
+    
+    color: var(--footer);
+}
+#more{
+    max-width: 1000px;
+    width: 1000px;
+}
+.s3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.s3 > ul{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+}
+.s3 > ul > li{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding: 0 50px;
+    list-style: none;
+    /* border: red solid 1px; */
+}
+.s3 > ul > li > ul{
+    text-align: start;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: normal;
+    
+    display: grid;
+    justify-content: center;
+
+}
+.s3 > ul > li > ul > li{
+    display: grid;
+}
+.s3 h4{
+    justify-self: center;
+    margin: 20px;
+}
+.s3 h3{
+    text-align: center;
+    font-weight: 700;
+}
+.s3 ul{
+    padding-inline-start: 0;
+    margin-block-start: 0;
+}
+
+/*/////////////
+///////////////
+PROGRESS BAR
+///////////////
+/////////////*/
+
+.progressBar{
+    display: inline-flex;
+    position: relative;
+    width: 180px;
+    height: 25px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.progressBar::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    content: "";
+    width: 99%;
+    height: 3px;
+
+    z-index: 1;
+}
+.pStep{
+    background-color: var(--progress);
+    width: 25px;
+    height: 100%;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 2;
+    outline: var(--content3) solid 3px;
+    outline-offset: 0;
+}
+    .step1 .pStep:nth-child(n+2){
+        background-color: var(--un-progress);
+    }
+    .step1.progressBar::before{
+        background: linear-gradient(90deg, 
+            var(--progress) 0%, 
+            var(--progress) 25%, 
+            var(--un-progress) 25%, 
+            var(--un-progress) 100%);
+    }
+    .step2 .pStep:nth-child(n+3){
+        background-color: var(--un-progress);
+    }
+    .step2.progressBar::before{
+        background: linear-gradient(90deg, 
+            var(--progress) 0%, 
+            var(--progress) 50%, 
+            var(--un-progress) 50%, 
+            var(--un-progress) 100%);
+    }
+    .step3 .pStep:nth-child(n+4){
+        background-color: var(--un-progress);
+    }
+    .step3.progressBar::before{
+        background: linear-gradient(90deg, 
+            var(--progress) 0%, 
+            var(--progress) 75%, 
+            var(--un-progress) 75%, 
+            var(--un-progress) 100%);
+    }
+    .step4 .pStep:nth-child(n+5){
+        background-color: var(--un-progress);
+    }
+    .step4.progressBar::before{
+        background-color: var(--progress);
+    }
+    .step5 .pStep{
+        background-color: var(--progress);
+    }
+    .step5.progressBar::before{
+        background-color: var(--progress);
+    }
+
+
+/* COLORS AND STUFF */
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content.c1{
+    background-color: var(--content1);;
+}
+.content.c2{
+    margin-top: 90px;
+    margin-bottom: 150px;
+}
+.content.c3{
+    background-color: var(--content3);
+    padding-bottom: 150px;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(75, 11, 11);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(126, 7, 7);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(177, 12, 12);
+}
+
+
+
+
+
+/*////////////////
+////////////////
+FOOTER
+////////////////
+////////////////*/
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    background-color: var(--footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "proxima_novasemibold", Arial, Helvetica, sans-serif;
+    margin-bottom: 5%;
+}
+
+
+footer > div{
+    max-width: 400px;
+    margin: 0 7%;
+}
+
+footer h2{
+    font-size: 40px;
+    position: relative;
+}
+footer h2::before{
+    content: "";
+    width: 30%;
+    height: 5px;
+    background-color: rgb(180, 15, 15) ;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+footer p, footer span{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.socials{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.socials li{
+    font-size: 30px;
+    background-color: rgb(51, 51, 51);
+    margin: 5px 10px 5px 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.socials > li:hover{
+    background-color: var(--content3);
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact div{
+    margin: 10px;
+}
+.contact div span{
+    margin-right: 10px;
+}

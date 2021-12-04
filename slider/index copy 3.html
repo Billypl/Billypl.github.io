@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>slider</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="center">
+        <div class="s-container">
+            <div id="slider">
+                <span class="sButton" onclick="NextPrevButton(-1)"> &#10094;</span>
+                <div class="slide slideLeft" id="s1" > PERFECT </div>
+                <div class="slide slideLeft" id="s2" > FLAWLESS </div>
+                <div class="slide slideLeft" id="s3" > GORGEROUS </div>
+                <div class="slide slideLeft" id="s4" > SLIDER </div>
+                <span class="sButton" onclick="NextPrevButton(1)"> &#10095;</span>
+            </div>
+            <div id="buttons">
+                <span class="sDot" onclick="chooseSlide(0); "></span>
+                <span class="sDot" onclick="chooseSlide(1)"></span>
+                <span class="sDot" onclick="chooseSlide(2)"></span>
+                <span class="sDot" onclick="chooseSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

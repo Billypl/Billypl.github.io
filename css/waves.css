@@ -1,0 +1,107 @@
+
+/*//////////////////////////
+SHAPES
+//////////////////////////*/
+
+
+
+
+.Wave{
+    position: relative;
+    width: 100%;
+}
+.Wave1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.Wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 210px;
+}
+
+.Wave1 .shape-fill {
+    fill: var(--content1);
+}
+
+
+
+.Wave2 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.Wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 197px;
+}
+
+.Wave2 .shape-fill {
+    fill: var(--content3);
+}
+
+.Cut {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.Cut svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+}
+
+.Cut .shape-fill {
+    fill: var(--content1);
+}
+
+
+.skew {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.skew svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 135px;
+}
+
+.skew .shape-fill {
+    fill: var(--footer);
+}
+
+.skewFooter{
+    position: relative;
+}
+
+
+
+
+
+
