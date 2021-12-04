@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Billy</title>
+    <link rel="stylesheet" href="css/logo and nav.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" href="slider/slider.css">
+
+    <script src="slider/slider.js"></script>
+    <!-- UNCOMMENT LATER -->
+    <script>
+        window.onscroll = function () {
+            if (scrollY >= 200) {
+                document.getElementById('backToTop').style.visibility = "visible";
+            } 
+            else {
+                document.getElementById('backToTop').style.visibility = "hidden";
+            }
+        };
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/0dcda202b3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="naV">
+        <ul>
+            <li><a href = "#aboutme">O mnie</a></li>
+            <li><a href = "#">Plany</a></li>
+            <li><a href = "#projects">Projekty</a></li>
+            <li><a href = "#more">Więcej</a></li>
+            <li  style="border:none;"><a href = "#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header>    
+        <div class="LogoWrapper">
+            <div class="logo">
+                <span>B</span>
+                <span>I</span>
+                <span>L</span>
+                <span>L</span>
+                <span>Y</span>
+            </div>   
+            <div class="superCut">
+                <div class="Cut">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <i class="fas fa-angle-up" id="backToTop"><a href="#naV"></a></i>
+
+    <article>
+
+        <div class="content c1">
+            <section  id="aboutme">
+                <h1>O MNIE</h1>
+                <div class="s1">
+                    <p class="p1">
+                        &emsp; Jestem uczniem 3 liceum i uczęszczam do XX LO. w Gdańsku. 
+                        Uwielbiam wszelkie aktywności fizyczne, a moje ulubione to jazda na rowerze oraz rolkach.
+                        Kocham czytać książki, a na ogniska nie ruszam się bez gitary. 
+                        Pasjonuję się informatyką, a bardziej szczegółowo programowaniem.
+                        Witaj na mojej stronie ;)
+                        
+                    </p>
+                    <img class="img1" src="attachments/super.jpg">
+                    <p class="p2">
+                        Chętnie pomagam innym w pracach domowych, ale także w wolnym czasie udzielam korepetycji z informatyki.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="Wave">
+            <div class="Wave1">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="content c2">
+            <section  id="projects">
+                <h1>PROJEKTY</h1>
+                <div class="center">
+                    <div class="s-container">
+                        <div id="slider">
+                            <span class="sButton" onclick="NextPrevButton(-1)"> &#10094;</span>
+                            
+                            <div class="slide" id="s1">
+                                <h2>Zgadywanie liczby</h2>
+                                <div class="project">
+                                   <video autoplay muted loop src="projects/zgadywanka.mp4"></video>
+                                    <span> 
+                                        <p>
+                                            <a href="https://bit.ly/3cUU72S" target="_blank"> Zgadywanie liczb </a> to 
+                                            jedna z pierwszych mini-gier jakie robi każdy początkujący,
+                                            więc i ja ją zrobiłem ;P 
+                                        </p>
+                                        <p>
+                                            Program losuje liczbę, a twoim zadaniem jest ją zgadnąć. Oczywiście 
+                                            dostaniesz pewne podpowiedzi ;)
+                                        </p>
+                                        <p>
+                                            Dodatkowo dodane kilka kolorów i 
+                                            pozycjonowanie okienka z ilością zgadniętych liczb. 
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="slide" id="s2">
+                                <h2>Kółko i krzyżyk</h2>
+                                <div class="project">
+                                    <video autoplay muted loop src="projects/TicTacToe.mp4"></video>
+                                    <span>
+                                        <p> <a href="https://bit.ly/3o0eYYZ" target="_blank"> Kółko i krzyżyk </a> to projekt, w którym stworzyłem nietypową rzecz
+                                        - możliwość poruszania wirtualnym "kursorem" w konsoli 
+                                        (za pomocą strzałek).
+                                        </p>
+                                        <p> 
+                                            Był to pierwszy "większy" projekt w c++ 
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="slide" id="s3">
+                                <h2>Wisielec</h2>
+                                <div class="project">
+                                    <video autoplay muted loop src="projects/hangman.mp4"></video>
+                                    <span>
+                                        <p> <a href="https://bit.ly/3cYLR1U" target="_blank"> Wisielec </a> jest znaną wszystkim grą. Dopóki ludzik 
+                                            nie zawiśnie na szubienicy, gra ciągle się toczy. 
+                                        </p>
+                                        <p> 
+                                            Poszczególne "sprite'y" ludzika i szubienicy są wczytywane
+                                            z wcześniej spreparowanych plików tekstowych.
+                                        </p>
+                                        <p> 
+                                            Tą grę zaprogramowałem rozszerzalnie, tzn. można dodwać tyle plików
+                                            z hasłami, ile tylko dusza zapragnie - program będzie mógł wylosować
+                                            każde z nowych haseł.
+                                        </p>
+                                    </span>                                </div>
+                            </div>
+
+                            <div class="slide" id="s4">
+                                <h2>Wąż</h2>
+                                <div class="project">
+                                    <video autoplay muted loop src="projects/snake.mp4"></video>
+                                    <span>
+                                        <p> Kultowy <a href="https://bit.ly/319NwQ3" target="_blank"> wąż </a> 
+                                            był zdecydowanie największym wyzwaniem jakiego podjąłem się do
+                                            zaprogramowania, szczególnie, że wybrałem do tego po raz kolejny
+                                            konsolę.
+                                        </p>
+                                        <p> 
+                                            Oprócz dynamcznej zmiany kierunków, jest również funkcjonalne menu,
+                                            z takimi zakładkami jak "ostatnie gry" czy "najlepsze wyniki"
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="sButton" onclick="NextPrevButton(1)"> &#10095;</span>
+                        </div>
+                        <div id="buttons">
+                            <span class="sDot" onclick="chooseSlide(0)"></span>
+                            <span class="sDot" onclick="chooseSlide(1)"></span>
+                            <span class="sDot" onclick="chooseSlide(2)"></span>
+                            <span class="sDot" onclick="chooseSlide(3)"></span>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <div class="Wave">
+            <div class="Wave2">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="content c3">
+            <section  id="more">
+                <h1>WIĘCEJ</h1>
+                <div class="s3">
+                    <h2>Znajomość języków programowania</h2>
+                    <ul>
+                        <li> <h3>Lowlevelowe</h3>
+                            <ul>
+                                <li> 
+                                    <h4>C++</h4>
+                                    <span class="progressBar step4">
+                                        <span class="pStep" title="początkujący"></span>
+                                        <span class="pStep" title="solidne podstawy"></span>
+                                        <span class="pStep" title="średnio-zaawansowany"></span>
+                                        <span class="pStep" title="zaawansowany"></span>
+                                        <span class="pStep" title="ekspert"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>C#</h4>
+                                    <span class="progressBar step2">
+                                        <span class="pStep" title="początkujący"></span>
+                                        <span class="pStep" title="solidne podstawy"></span>
+                                        <span class="pStep" title="średnio-zaawansowany"></span>
+                                        <span class="pStep" title="zaawansowany"></span>
+                                        <span class="pStep" title="ekspert"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <h3>Frontendowe</h3>
+                            <ul>
+                                <li>
+                                    <h4>HTML</h4>
+                                    <span class="progressBar step3">
+                                        <span class="pStep" title="początkujący"></span>
+                                        <span class="pStep" title="solidne podstawy"></span>
+                                        <span class="pStep" title="średnio-zaawansowany"></span>
+                                        <span class="pStep" title="zaawansowany"></span>
+                                        <span class="pStep" title="ekspert"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>CSS</h4>
+                                    <span class="progressBar step4">
+                                        <span class="pStep" title="początkujący"></span>
+                                        <span class="pStep" title="solidne podstawy"></span>
+                                        <span class="pStep" title="średnio-zaawansowany"></span>
+                                        <span class="pStep" title="zaawansowany"></span>
+                                        <span class="pStep" title="ekspert"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>JS</h4>
+                                    <span class="progressBar step3">
+                                        <span class="pStep" title="początkujący"></span>
+                                        <span class="pStep" title="solidne podstawy"></span>
+                                        <span class="pStep" title="średnio-zaawansowany"></span>
+                                        <span class="pStep" title="zaawansowany"></span>
+                                        <span class="pStep" title="ekspert"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <h3>Backendowe</h3>
+                            <ul>
+                                <li>
+                                    <h4>SQL</h4>
+                                    <span class="progressBar step4">
+                                        <span class="pStep" title="początkujący"></span>
+                                        <span class="pStep" title="solidne podstawy"></span>
+                                        <span class="pStep" title="średnio-zaawansowany"></span>
+                                        <span class="pStep" title="zaawansowany"></span>
+                                        <span class="pStep" title="ekspert"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4>PHP</h4>
+                                    <span class="progressBar step1">
+                                        <span class="pStep" title="początkujący"></span>
+                                        <span class="pStep" title="solidne podstawy"></span>
+                                        <span class="pStep" title="średnio-zaawansowany"></span>
+                                        <span class="pStep" title="zaawansowany"></span>
+                                        <span class="pStep" title="ekspert"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="s1">
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cupiditate cumque fugiat quaerat quidem, debitis, ratione sequi quos suscipit, nemo alias! Magni error sapiente atque consequuntur dignissimos eaque pariatur cumque.</p>
+                    <img src="attachments/images.jpg">
+                    
+                    <img src="attachments/images.jpg">
+                    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa iure ea dolor consequatur maxime explicabo perspiciatis perferendis aut laudantium accusantium eum aliquid totam laboriosam ducimus odio, debitis illo quibusdam.</p>
+                </div> -->
+            </section>
+        </div>
+    </article>
+
+    <div class="skewFooter">
+        <div class="skew">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="icons"> 
+            <h2>Social Media</h2>
+            <p>Na tych social mediach można mnie czasami znaleźć ;)</p>
+            <ul class="socials">
+                <li><a href="https://steamcommunity.com/profiles/76561198155660760/" target="_blank" title="Steam">
+                    <i class="fab fa-steam"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/billy.pl/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/profile.php?id=100007338151525" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="https://github.com/Billypl" target="_blank" title="Github">
+                    <i class="fab fa-github"></i></a>
+                </li>
+            </ul>    
+        </div>
+        <div class="contact" id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Jeśli potrzebny jest szybki i bezpośredni kontakt polecem się tutaj</p>
+            <div>
+                <span><i class="fas fa-phone"></i></span>
+                <span>+48 664 626 600</span>
+            </div>
+            <div>
+                <span><i class="fas fa-envelope"></i></span>
+                <span>kriper01@wp.pl</span>
+            </div>
+            <div>
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <span>Gdańsk, Polska</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
