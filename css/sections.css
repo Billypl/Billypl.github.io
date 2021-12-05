@@ -9,7 +9,7 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+body, html{
     overflow-x: hidden;
 }
 
@@ -190,6 +190,7 @@ STREFA CONTENT 3
 .s3 h4{
     justify-self: center;
     margin: 20px;
+    margin-bottom: 5px;
 }
 .s3 h3{
     text-align: center;
@@ -212,7 +213,7 @@ PROGRESS BAR
     width: 180px;
     height: 25px;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .progressBar::before{
     position: absolute;
@@ -234,6 +235,7 @@ PROGRESS BAR
     z-index: 2;
     outline: var(--content3) solid 3px;
     outline-offset: 0;
+    cursor: pointer;
 }
     .step1 .pStep:nth-child(n+2){
         background-color: var(--un-progress);
@@ -278,6 +280,14 @@ PROGRESS BAR
         background-color: var(--progress);
     }
 
+.progressDesc{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 
 /* COLORS AND STUFF */
 
@@ -307,6 +317,7 @@ PROGRESS BAR
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(177, 12, 12);
 }
+
 
 
 

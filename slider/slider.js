@@ -1,5 +1,5 @@
 
-window.onload = changeSlide;
+window.addEventListener('load', OnLoading);
 var nrSlide = 0;
 
 var slides = document.getElementsByClassName("slide");
@@ -9,6 +9,22 @@ var TIMER_changeSlide = 0, fadeOut = 0;
 var sChangeDuration = 30000, fadeOutDuration = 700;
 
 var slideLeft = true;
+
+
+// var collection = document.getElementsByClassName("pStep");
+// Array.from(collection).forEach(function(element) {
+//     console.log(element)
+// });
+
+function OnLoading()
+{
+    
+
+
+    changeSlide();
+}
+
+
 
 function changeSlide()
 {
