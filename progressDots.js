@@ -9,17 +9,17 @@ function displayKnowlageStatus(stage, state){
     if(state == "enter")
         progressDesc[pDescNr].innerHTML = stagesNames[stage%5];
     else if(state == "out")
-        progressDesc[pDescNr].innerHTML = "‎";
+        progressDesc[pDescNr].innerHTML = "‎&#8203;";
     }
 
 function getProgressDots(){
-    var stage = 0;  
+    var stage = 0;
     Array.from(progressDots).forEach(function(element) {
         element.addEventListener("mouseenter", displayKnowlageStatus.bind(null, stage, "enter"));
         element.addEventListener("mouseout", displayKnowlageStatus.bind(null, stage, "out"));
         stage++;
     });
     Array.from(progressDesc).forEach(function(element){
-        element.innerHTML = "‎";
+        element.innerHTML = "&#8203;";
     });
 }
