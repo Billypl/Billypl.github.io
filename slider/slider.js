@@ -10,17 +10,7 @@ var sChangeDuration = 30000, fadeOutDuration = 700;
 
 var slideLeft = true;
 
-
-// var collection = document.getElementsByClassName("pStep");
-// Array.from(collection).forEach(function(element) {
-//     console.log(element)
-// });
-
-function OnLoading()
-{
-    
-
-
+function OnLoading(){
     changeSlide();
 }
 

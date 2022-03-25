@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/sections.css">
     <link rel="stylesheet" href="css/waves.css">
     <link rel="stylesheet" href="slider/slider.css">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <script src="slider/slider.js"></script>
     <script src="progressDots.js"></script>
-    <!-- UNCOMMENT LATER -->
     <script>
         window.onscroll = function () {
             if (scrollY >= 200) {
@@ -30,13 +30,6 @@
 
 </head>
 <body>
-    <!-- <script type="text/javascript">
-        let collection = document.getElementsByClassName("superCut");
-  
-        Array.from(collection).forEach(function(element) {
-            console.log(element)
-        });
-    </script> -->
     <nav id="naV">
         <ul>
             <li><a href = "#aboutme">O mnie</a></li>
@@ -193,6 +186,21 @@
                                     </span>
                                 </div>
                             </div>
+                            <div class="slide" id="s6">
+                                <h2><a href="https://github.com/Billypl/Ascii-Generator" target="_blank">Ascii generator</a></h2>
+                                <div class="project">
+                                    <video autoplay muted loop src="projects/pokeBot.mp4"></video>
+                                    <span>
+                                        <p> Nuda może przynieść wiele ciekawych pomysłów. Takim jak właśnie 
+                                            <a  href="https://github.com/Billypl/PokeBot" target="_blank"> 
+                                            PokeBot</a> , który został zainspirowany możliwością irytowania moich znajomych ciągłymi zaczepkami.
+                                        </p> 
+                                        <p> 
+                                            Wystarczy najechać na zaczepkę, kilkąć klawisz <i style="color:rgb(175, 55, 55)">insert</i> i cieszyć się automatycznymi zaczepkami.   
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
                             <span class="sButton" onclick="NextPrevButton(1)"> &#10095;</span>
                         </div>
                         <div id="buttons">
@@ -201,6 +209,7 @@
                             <span class="sDot" onclick="chooseSlide(2)"></span>
                             <span class="sDot" onclick="chooseSlide(3)"></span>
                             <span class="sDot" onclick="chooseSlide(4)"></span>
+                            <span class="sDot" onclick="chooseSlide(5)"></span>
                         </div>
                     </div>
             </section>
