@@ -8,8 +8,8 @@ function renderProgressDots(){
     var progressBoxes = document.getElementsByClassName("progress");
     var progressLevel = document.getElementsByClassName("progressBar");
     var knowledgeLevel = [
-        [3, "c++"],
-        [2, "c#"],
+        [4, "c++"],
+        [3, "c#"],
         [2, "HTML"],
         [3, "CSS"],
         [2, "JS"],
