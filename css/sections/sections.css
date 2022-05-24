@@ -43,13 +43,21 @@ section h1{
     color:red;
 }
 
-@media (max-width: 720px){
+@media (max-width:800px){
+    section{
+        max-width: 500px;
+    }
+    p{
+        margin: 0.25rem;
+    }
+}
+/* @media (max-width: 720px){
     section > div{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+} */
 .p1{
     grid-column: 1/3;
 }

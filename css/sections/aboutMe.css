@@ -12,9 +12,16 @@
     width: 100%;
     max-height: 100%;
 }
-.c1 .p1 { grid-area: p1; margin-bottom: 15px;}
+.c1 .p1 { grid-area: p1; }
 
 .c1 .p2 {grid-area: p2; }
 
 .c1 .img1 { grid-area: img1; position: relative;}
 
+@media (max-width: 800px){
+    .c1 > section > div {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+    } 
+}

@@ -92,8 +92,12 @@
     position: relative;
 }
 
-
-
-
-
+@media (max-width: 800px){
+    .Wave1{
+        width: 200%;
+    }
+    .Wave2{
+        width: 270%;
+    }
+}
 

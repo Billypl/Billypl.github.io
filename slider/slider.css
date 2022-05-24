@@ -11,32 +11,23 @@
     width: 100%;
 }
 #slider{
-    /* border: 1px solid red; */
-    height: 500px;
+    min-height: 500px;
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     overflow: hidden;
     z-index: 1;
 }
 .slide{
-    display: block;
+    display: flex;
     flex-wrap: wrap;
-
-    /* width: 100%; */
     height: 100%; 
     transition: transform 1s;
-    /* z-index: 100; */
     padding: 0 80px;
     
     background-color: rgb(29, 29, 29); 
 }
-
- /* #s1{background-color: rgb(128, 128, 128);}
-#s2{background-color: rgb(102, 102, 102);}
-#s3{background-color: rgb(88, 88, 88);}
-#s4{background-color: rgb(65, 65, 65);}  */
 
 
 #buttons{
