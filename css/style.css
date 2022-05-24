@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: Anton;
+    margin: 0;
+}
+.main{
+    position: relative;
+}

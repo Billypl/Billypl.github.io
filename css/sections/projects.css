@@ -1,0 +1,36 @@
+#projects h1{
+    text-align: center;
+}
+#projects{
+    width: 100%;
+}
+#projects video{
+    max-width: 60%;
+    object-fit: fill;
+    position: relative;
+}
+#projects p{
+    margin: 0 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.project{
+    display: flex;
+}
+#projects h2{
+    color: red;
+    font-size: 2.2em;
+    margin-top: 0;
+}
+#projects a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    transition: color 0.1s;
+}
+#projects a:hover{
+    color: rgb(134, 0, 0);
+}
+#s3 p{
+    font-size: 1.178em;
+}

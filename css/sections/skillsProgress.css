@@ -1,0 +1,74 @@
+.progressBar{
+    display: inline-flex;
+    position: relative;
+    width: 160px;
+    height: 25px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.progressBar::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    content: "";
+    width: 99%;
+    height: 3px;
+
+    z-index: 1;
+}
+.pStep{
+    background-color: var(--progress);
+    width: 25px;
+    height: 100%;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 2;
+    outline: var(--content3) solid 3px;
+    outline-offset: 0;
+    cursor: pointer;
+}
+/* .pStep:hover{
+    --beka: hsl(0, 100%, 50%);
+    background-color: hsl(var(--beka),0.2);
+} */
+    .step1 .pStep:nth-child(n+2){
+        background-color: var(--un-progress);
+    }
+    .step1.progressBar::before{
+        background: linear-gradient(90deg, 
+            var(--progress) 0%, 
+            var(--progress) 33%, 
+            var(--un-progress) 33%, 
+            var(--un-progress) 100%);
+    }
+    .step2 .pStep:nth-child(n+3){
+        background-color: var(--un-progress);
+    }
+    .step2.progressBar::before{
+        background: linear-gradient(90deg, 
+            var(--progress) 0%, 
+            var(--progress) 66%, 
+            var(--un-progress) 66%, 
+            var(--un-progress) 100%);
+    }
+    .step3 .pStep:nth-child(n+4){
+        background-color: var(--un-progress);
+    }
+    .step3.progressBar::before{
+        background-color: var(--progress);
+    }
+    .step4 .pStep:nth-child(n+5){
+        background-color: var(--un-progress);
+    }
+    .step4.progressBar::before{
+        background-color: var(--progress);
+    }
+
+.progressDesc{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    margin-bottom: 10px;
+}

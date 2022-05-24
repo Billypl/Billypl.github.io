@@ -1,0 +1,85 @@
+nav{
+    width: 100%;
+    height: 3em;
+    position: absolute;
+    z-index: 1;
+}
+nav > ul{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+nav > ul > li{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    border-right: 1px  rgba(255, 0, 0, 0.486);
+    border-right-style: dashed;
+    transition: 0.5s;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(206, 203, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(4px);
+}
+
+
+nav > ul > li > a::after{
+    content: "";
+    display: block;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid red;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 0.5s ;
+}
+
+nav > ul > li > a:hover::after{ 
+    transform: translateX(0%);
+}
+nav > ul > li > a:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+#backToTop{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    z-index: 10;
+    background-color: red;
+    visibility: hidden;
+}
+#backToTop > a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#backToTop:hover{
+    background-color: rgb(165, 19, 19);
+}
