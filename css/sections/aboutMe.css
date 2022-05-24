@@ -17,13 +17,4 @@
 .c1 .p2 {grid-area: p2; }
 
 .c1 .img1 { grid-area: img1; position: relative;}
-/* .img1::before{
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    top:0;
-    left: 0;
-    padding-top: 10px;
-} */
+

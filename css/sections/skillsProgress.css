@@ -28,10 +28,6 @@
     outline-offset: 0;
     cursor: pointer;
 }
-/* .pStep:hover{
-    --beka: hsl(0, 100%, 50%);
-    background-color: hsl(var(--beka),0.2);
-} */
     .step1 .pStep:nth-child(n+2){
         background-color: var(--un-progress);
     }
