@@ -51,13 +51,6 @@ section h1{
         margin: 0.25rem;
     }
 }
-/* @media (max-width: 720px){
-    section > div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-} */
 .p1{
     grid-column: 1/3;
 }
@@ -95,8 +88,3 @@ section h1{
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(177, 12, 12);
 }
-
-
-
-
-
