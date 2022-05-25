@@ -4,6 +4,7 @@ footer{
     position: relative;
     background-color: var(--footer);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-family: "proxima_novasemibold", Arial, Helvetica, sans-serif;
@@ -13,7 +14,7 @@ footer{
 
 footer > div{
     max-width: 400px;
-    margin: 0 7%;
+    margin: 0 0 0 7%;
 }
 
 footer h2{
@@ -39,6 +40,7 @@ footer p, footer span{
     display: flex;
     padding: 0;
 }
+
 .socials li{
     font-size: 30px;
     background-color: rgb(51, 51, 51);
@@ -63,11 +65,18 @@ footer p, footer span{
     align-items: center;
     justify-content: center;
 }
+.contact{
+    margin-top: 15px;
+}
 
 
 .contact div{
     margin: 10px;
 }
-.contact div span{
+.contact div > span:nth-child(1){
     margin-right: 10px;
+    margin-bottom: 0;
+    display: inline-flex;
+    justify-content: center;
+    width: 25px;
 }
