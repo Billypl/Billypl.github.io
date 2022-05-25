@@ -1,25 +1,3 @@
-:root{
-    --content3: #6d0f0f;
-    --content1: #111111;
-    --footer: rgb(29,29,29);
-    --background: rgb(29,29,29);
-    --progress:rgb(196, 20, 20); 
-    --un-progress: rgb(87, 87, 87);
-}
-html{
-    scroll-behavior: smooth;
-}
-body, html{
-    overflow-x: hidden;
-}
-
-p{
-    margin: 0;
-}
-h1{
-    font-size: 2.5em;
-}
-
 article{
     margin: 0;
     display: flex;

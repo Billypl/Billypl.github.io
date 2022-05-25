@@ -5,10 +5,13 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <title>Billy</title>
-    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/logo.css">
-    <link rel="stylesheet" href="css/nav.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/intro/logo.css">
+    <link rel="stylesheet" href="css/intro/navDesktop.css">
+    <link rel="stylesheet" href="css/intro/navMobile.css">
 
     <link rel="stylesheet" href="css/sections/sections.css">
     <link rel="stylesheet" href="css/sections/aboutMe.css">
@@ -34,16 +37,25 @@
 
 </head>
 <body>
+
+
     <nav id="naV">
         <ul>
-            <li><a href = "#aboutme" draggable="false">O mnie</a></li>
-            <li><a href = "#" draggable="false">Plany</a></li>
-            <li><a href = "#projects" draggable="false">Projekty</a></li>
-            <li><a href = "#more" draggable="false">Więcej</a></li>
-            <li style="border:none;" >
-                <a href = "#kontakt" draggable="false">Kontakt</a></li>
+            <li><a href = "#aboutme">  O mnie</a></li>
+            <li><a href = "#">         Plany </a></li>
+            <li><a href = "#projects"> Projekty </a></li>
+            <li><a href = "#more">     Więcej </a></li>
+            <li>
+                <a href = "#kontakt">  Kontakt </a></li>
         </ul>
+        <span id="burger">
+            <div class="slice"></div>
+            <div class="slice"></div>
+            <div class="slice"></div>
+        </span>
     </nav>
+    <script src="js/nav.js"></script>
+
     <header>    
         <div class="LogoWrapper">
             <div class="logo">
