@@ -14,8 +14,6 @@ function OnLoading(){
     changeSlide();
 }
 
-
-
 function changeSlide()
 {
     if(nrSlide > slides.length - 1) 
@@ -82,9 +80,10 @@ function slideImage()
     //displaying slide
     if(nrSlide == slides.length){ nrSlide = 0; }
     slides[nrSlide].style.display = 'block';
+    slides[nrSlide].style.position = 'relative';
             
     slides[nrSlide].classList.add('active');
-    nrSlide++;
+        nrSlide++;
 
     // wait for fade effect to finish,  then add display none to current image and activate next one
     fadeOut = setTimeout(
