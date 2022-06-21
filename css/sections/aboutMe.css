@@ -1,25 +1,32 @@
-.c1 > section > div {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px 40px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "p1 img1"
-        "p2 img1";
+#aboutme {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "h1 h1 h1 h1 img img img"
+        "p1 p1 p1 p1 img img img"
+        "p1 p1 p1 p1 img img img"
+        "p2 p2 p2 p2 img img img";
 }
-.c1 img{
+#aboutme #p1 { grid-area: p1; }
+#aboutme #p2 { grid-area: p2; }
+#aboutme h1 { grid-area: h1; margin: 30px; }
+#aboutme img { grid-area: img; }
+
+#aboutme img{
     width: 100%;
     max-height: 100%;
+    position: relative; 
+    align-self: flex-end; 
 }
-.c1 .p1 { grid-area: p1; }
-
-.c1 .p2 {grid-area: p2; }
-
-.c1 .img1 { grid-area: img1; position: relative;}
+#aboutme p{
+    margin: 20px 0;
+}
+#aboutme{
+    font-size: 1.5rem;
+}
 
 @media (max-width: 800px){
-    .c1 > section > div {
+    #aboutme {
         display: flex;
         flex-wrap: wrap;
         margin: 1rem;

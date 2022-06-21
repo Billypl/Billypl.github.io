@@ -1,10 +1,10 @@
-.c3 h1{
+#more h1{
     margin-bottom: 40px;
     color: white;
     text-align: center;
     font-size: 4rem;
 }
-.c3 h2{
+#more h2{
     font-size: 2.5rem;
     margin: 0;
     text-align: center;
@@ -12,10 +12,10 @@
     color: var(--footer);
 }
 
-.content.c3 > section{
+#more{
     max-width: 100%;
 }
-.s3 > ul{
+#more ul{
     font-size: 1.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +23,7 @@
     align-items: center;
     gap: 1.5rem 3rem;
 }
-.s3 > ul > li{
+#more ul > li{
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -31,7 +31,7 @@
     padding: 0 50px;
     list-style: none;
 }
-.s3 > ul > li > ul{
+#more ul > li > ul{
     font-size: 25px;
     font-weight: normal;
     margin-top: 4rem;
@@ -39,19 +39,19 @@
     justify-content: center;
 
 }
-.s3 > ul > li > ul > li{
+#more ul > li > ul > li{
     display: grid;
 }
-.s3 h3{
+#more h3{
     margin-top: 3rem;
     font-weight: 700;
     width: 260px;
 }
-.s3 h4{
+#more h4{
     margin: 20px;
     margin-bottom: 5px;
 }
-.s3 ul{
+#more ul{
     padding-inline-start: 0;
     margin-block-start: 0;
 }
