@@ -5,7 +5,6 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <title>Billy</title>
-
     
     <link rel="stylesheet" href="css/style.css">
     
@@ -77,23 +76,24 @@
 
     <article>
 
-        <div class="content c1">
-            <section  id="aboutme">
-                <h1>O MNIE</h1>
-                <div class="s1">
-                    <p class="p1">
-                        &emsp; Jestem uczniem 3 liceum i uczęszczam do XX LO. w Gdańsku. 
-                        Uwielbiam wszelkie aktywności fizyczne, a moje ulubione to jazda na rowerze oraz rolkach.
-                        Kocham czytać książki, a na ogniska nie ruszam się bez gitary. 
-                        Pasjonuję się informatyką, a szczegółowo - programowaniem.
-                        Witaj na mojej stronie ;)
-                        
-                    </p>
-                    <img class="img1" src="attachments/myPicture.jpg">
-                    <p class="p2">
-                        Chętnie pomagam innym w pracach domowych, ale także w wolnym czasie udzielam korepetycji z informatyki.</p>
-                </div>
-            </section>
+        <div class="content">
+            <section  id="aboutme" class="s1">
+                    <h1>O MNIE</h1>
+                    <div id="aboutme-description">
+                        <p>
+                            &emsp; Jestem uczniem 3 liceum i uczęszczam do XX LO. w Gdańsku. 
+                            Uwielbiam wszelkie aktywności fizyczne, a moje ulubione to jazda na rowerze oraz rolkach.
+                            Kocham czytać książki, a na ogniska nie ruszam się bez gitary. 
+                            Pasjonuję się informatyką, a szczegółowo - programowaniem.
+                            Witaj na mojej stronie ;)
+                            
+                        </p>
+                        <p>
+                            Chętnie pomagam innym w pracach domowych, ale także w wolnym czasie udzielam korepetycji z informatyki.
+                        </p>
+                    </div>
+                    <img class="img1" src="attachments/myPicture.png">
+                </section>
         </div>
 
         <div class="Wave">
@@ -104,15 +104,15 @@
             </div>
         </div>
 
-        <div class="content c2">
-            <section  id="projects">
+        <div class="content">
+            <section id="projects">
                 <h1>PROJEKTY</h1>
                 <div class="center">
                     <div class="s-container">
                         <div id="slider">
                             <span class="sButton" onclick="NextPrevButton(-1)"> &#10094;</span>
                             
-                            <div class="slide" id="s1">
+                            <div class="slide">
                                 <h2><a href="https://bit.ly/3cUU72S" target="_blank">Zgadywanie liczby</a></h2>
                                 <div class="project">
                                    <video autoplay muted loop src="projects/zgadywanka.mp4"></video>
@@ -133,7 +133,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="slide" id="s2">
+                            <div class="slide">
                                 <h2><a href="https://bit.ly/3o0eYYZ" target="_blank">Kółko i krzyżyk</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/TicTacToe.mp4"></video>
@@ -148,7 +148,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="slide" id="s3">
+                            <div class="slide">
                                 <h2><a href="https://bit.ly/3cYLR1U" target="_blank">Wisielec</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/hangman.mp4"></video>
@@ -168,7 +168,7 @@
                                     </span>                                
                                 </div>
                             </div>
-                            <div class="slide" id="s4">
+                            <div class="slide">
                                 <h2><a href="https://bit.ly/319NwQ3" target="_blank">Wąż</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/snake.mp4"></video>
@@ -185,7 +185,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="slide" id="s5">
+                            <div class="slide">
                                 <h2><a href="https://github.com/Billypl/Ascii-Generator" target="_blank">Ascii generator</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/ascii generator.mp4"></video>
@@ -199,7 +199,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="slide" id="s6">
+                            <div class="slide">
                                 <h2><a href="https://github.com/Billypl/PokeBot" target="_blank">PokeBot</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/pokeBot.mp4"></video>
@@ -229,7 +229,7 @@
         </div>
 
         <div class="Wave">
-            <div class="Wave2">
+            <div class="multiWave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
                     <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
@@ -238,10 +238,10 @@
             </div>
         </div>
 
-        <div class="content c3">
+        <div class="content">
             <section  id="more">
                 <h1>WIĘCEJ</h1>
-                <div class="s3">
+                <div>
                     <h2>Znajomość języków programowania</h2>
                     <ul>
                         <li> <h3>Rodzina C</h3>
@@ -313,7 +313,7 @@
         </div>
         <div class="contact" id="kontakt">
             <h2>Kontakt</h2>
-            <p>Jeśli potrzebny jest szybki i bezpośredni kontakt polecem się tutaj</p>
+            <p>Jeśli potrzebny jest szybki i bezpośredni kontakt polecam się tutaj</p>
             <div>
                 <span><i class="fas fa-phone"></i></span>
                 <span>+48 664 626 600</span>

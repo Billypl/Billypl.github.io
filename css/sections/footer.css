@@ -55,6 +55,14 @@ footer p, footer span{
 .socials > li:hover{
     background-color: var(--content3);
 }
+.socials > li:hover a{
+    animation: shake 0.5s;
+}
+@keyframes shake{
+   from {transform: rotate(0deg);}
+   to {transform: rotate(360deg);}
+}
+
 
 .socials a{
     text-decoration: none;

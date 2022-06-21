@@ -1,6 +1,6 @@
 var progressDots = document.getElementsByClassName("pStep");
 var progressDescription = document.getElementsByClassName("progressDesc");
-var stagesNames = ["początkujący", "solidne podstawy", "średnio-zaawansowany", "zaawansowany"]
+const stagesNames = ["początkujący", "solidne podstawy", "średnio-zaawansowany", "zaawansowany"]
 
 window.addEventListener('load', getProgressDots);
 
