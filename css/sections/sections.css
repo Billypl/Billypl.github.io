@@ -1,25 +1,3 @@
-:root{
-    --content3: #6d0f0f;
-    --content1: #111111;
-    --footer: rgb(29,29,29);
-    --background: rgb(29,29,29);
-    --progress:rgb(196, 20, 20); 
-    --un-progress: rgb(87, 87, 87);
-}
-html{
-    scroll-behavior: smooth;
-}
-body, html{
-    overflow-x: hidden;
-}
-
-p{
-    margin: 0;
-}
-h1{
-    font-size: 2.5em;
-}
-
 article{
     margin: 0;
     display: flex;
@@ -30,34 +8,24 @@ article{
     font-family: "proxima_novasemibold", Arial, Helvetica, sans-serif;
 }
 section{
-    /* background-color: rgb(37, 37, 37); */
-    max-width: 800px;
+    max-width: 1000px;
     font-size: 20px;
     margin: 20px 0 80px 0;
     padding: 20px;
     position: relative;
 }
-section > .s1{
-    font-size: 1.2em;
-}
 section h1{
     color:red;
 }
 
-@media (max-width: 720px){
-    section > div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+@media (max-width:800px){
+    section{
+        max-width: 500px;
+    }
+    p{
+        margin: 0.25rem;
     }
 }
-.p1{
-    grid-column: 1/3;
-}
-.p2{
-    grid-column: 2/4;
-}
-
 
 
 /* COLORS AND STUFF */
@@ -67,14 +35,10 @@ section h1{
     display: flex;
     justify-content: center;
 }
-.content.c1{
+.content:first-child{
     background-color: var(--content1);;
 }
-.content.c2{
-    margin-top: 90px;
-    margin-bottom: 150px;
-}
-.content.c3{
+.content:last-child{
     background-color: var(--content3);
     padding-bottom: 150px;
 }
@@ -88,8 +52,3 @@ section h1{
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(177, 12, 12);
 }
-
-
-
-
-

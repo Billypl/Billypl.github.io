@@ -25,7 +25,7 @@
 
 
 
-.Wave2 {
+.multiWave {
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -35,14 +35,14 @@
     transform: rotate(180deg);
 }
 
-.Wave2 svg {
+.multiWave svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 197px;
 }
 
-.Wave2 .shape-fill {
+.multiWave .shape-fill {
     fill: var(--content3);
 }
 
@@ -92,8 +92,15 @@
     position: relative;
 }
 
-
-
-
-
+@media (max-width: 800px){
+    .Wave1{
+        width: 200%;
+    }
+    .multiWave{
+        width: 270%;
+    }
+    .skewFooter{
+        width: 250%;
+    }
+}
 
