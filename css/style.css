@@ -1,36 +1,44 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body, html{
-    overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
-body{
-    background-color: rgb(29, 29, 29);
-    color: white;
-    font-family: Anton;
-    margin: 0;
+body {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-family: Anton;
+  margin: 0;
 }
-.main{
-    position: relative;
-}
-
-:root{
-    --content3: #6d0f0f;
-    --content1: #111111;
-    --footer: rgb(29,29,29);
-    --background: rgb(29,29,29);
-    --progress:rgb(196, 20, 20); 
-    --un-progress: rgb(87, 87, 87);
-
-    --primary-color: 0, 0%;
-    --nav: hsl(var(--primary-color), 11.5%);
-    --navH: hsl(var(--primary-color), 7%) 
+.main {
+  position: relative;
 }
 
+:root {
+  --content3: #6d0f0f;
+  --content1: #111111;
+  --footer: rgb(29, 29, 29);
+  --background: rgb(29, 29, 29);
+  --progress: rgb(196, 20, 20);
+  --un-progress: rgb(87, 87, 87);
 
-p{
-    margin: 0;
+  --primary-color: 0, 0%;
+  --nav: hsl(var(--primary-color), 11.5%);
+  --navH: hsl(var(--primary-color), 7%);
 }
-h1{
-    font-size: 2.5em;
+
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 2.5em;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  filter: brightness(70%);
 }

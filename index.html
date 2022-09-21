@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <title>Billy</title>
-    
+
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="stylesheet" href="css/intro/logo.css">
     <link rel="stylesheet" href="css/intro/navDesktop.css">
     <link rel="stylesheet" href="css/intro/navMobile.css">
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="css/sections/aboutMe.css">
     <link rel="stylesheet" href="css/sections/projects.css">
     <link rel="stylesheet" href="css/sections/slider.css">
-    
+
     <link rel="stylesheet" href="css/sections/skills.css">
     <link rel="stylesheet" href="css/sections/skillsProgress.css">
     <link rel="stylesheet" href="css/sections/footer.css">
@@ -35,16 +36,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap">
 
 </head>
+
 <body>
 
 
     <nav id="naV">
         <ul>
-            <li><a href = "#aboutme">  O mnie</a></li>
-            <li><a href = "#">         Plany </a></li>
-            <li><a href = "#projects"> Projekty </a></li>
-            <li><a href = "#more">     Więcej </a></li>
-            <li><a href = "#kontakt">  Kontakt </a></li>
+            <li><a href="#aboutme"> O mnie</a></li>
+            <li><a href="#"> Plany </a></li>
+            <li><a href="#projects"> Projekty </a></li>
+            <li><a href="#more"> Więcej </a></li>
+            <li><a href="#kontakt"> Kontakt </a></li>
         </ul>
         <span id="burger">
             <div class="slice"></div>
@@ -53,7 +55,7 @@
         </span>
     </nav>
 
-    <header>    
+    <header>
         <div class="LogoWrapper">
             <div class="logo">
                 <span>B</span>
@@ -61,10 +63,11 @@
                 <span>L</span>
                 <span>L</span>
                 <span>Y</span>
-            </div>   
+            </div>
             <div class="superCut">
                 <div class="Cut">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
                         <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
                     </svg>
                 </div>
@@ -76,27 +79,31 @@
     <article>
 
         <div class="content">
-            <section  id="aboutme" class="s1">
+            <section id="aboutme" class="s1">
                 <h1>O MNIE</h1>
                 <p id="p1">
-                    &emsp; Jestem absolwentem XX LO. w Gdańsku. 
+                    &emsp; Jestem absolwentem XX LO. w Gdańsku.
                     Uwielbiam wszelkie aktywności fizyczne, a moje ulubione to jazda na rowerze oraz rolkach.
-                    Kocham czytać książki, a na ogniska nie ruszam się bez gitary. 
+                    Kocham czytać książki, a na ogniska nie ruszam się bez gitary.
                     Pasjonuję się informatyką, a szczegółowo - programowaniem.
                     Witaj na mojej stronie ;)
-                    
+
                 </p>
                 <img class="img1" src="attachments/myPicture.png">
                 <p id="p2">
-                    Chętnie pomagam innym w pracach domowych, ale także w wolnym czasie udzielam korepetycji z informatyki.
+                    Chętnie pomagam innym w pracach domowych, a w wolnym czasie udzielam korepetycji z
+                    informatyki.
                 </p>
             </section>
         </div>
 
         <div class="Wave">
             <div class="Wave1">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
                 </svg>
             </div>
         </div>
@@ -108,74 +115,58 @@
                     <div class="s-container">
                         <div id="slider">
                             <span class="sButton" onclick="NextPrevButton(-1)"> &#10094;</span>
-                            
                             <div class="slide">
-                                <h2><a href="https://bit.ly/3cUU72S" target="_blank">Zgadywanie liczby</a></h2>
-                                <div class="project">
-                                   <video autoplay muted loop src="projects/zgadywanka.mp4"></video>
-                                    <span> 
-                                        <p>
-                                            <a href="https://bit.ly/3cUU72S" target="_blank"> Zgadywanie liczb </a> to 
-                                            jedna z pierwszych mini-gier jakie robi każdy początkujący,
-                                            więc i ja ją zrobiłem ;P 
-                                        </p>
-                                        <p>
-                                            Program losuje liczbę, a twoim zadaniem jest ją zgadnąć. Oczywiście 
-                                            dostaniesz pewne podpowiedzi ;)
-                                        </p>
-                                        <p>
-                                            Dodatkowo dodane kilka kolorów i 
-                                            pozycjonowanie okienka z ilością zgadniętych liczb. 
-                                        </p>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <h2><a href="https://bit.ly/3o0eYYZ" target="_blank">Kółko i krzyżyk</a></h2>
+                                <h2><a href="https://github.com/Billypl/TicTacToe" target="_blank">Kółko i krzyżyk</a>
+                                </h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/TicTacToe.mp4"></video>
                                     <span>
-                                        <p> <a href="https://bit.ly/3o0eYYZ" target="_blank"> Kółko i krzyżyk </a> to projekt, w którym stworzyłem nietypową rzecz
-                                        - możliwość poruszania wirtualnym "kursorem" w konsoli 
-                                        (za pomocą strzałek).
+                                        <p> <a href="https://github.com/Billypl/TicTacToe" target="_blank"> Kółko i
+                                                krzyżyk </a> to
+                                            projekt, w którym stworzyłem nietypową rzecz
+                                            - możliwość poruszania wirtualnym "kursorem" w konsoli
+                                            (za pomocą strzałek).
                                         </p>
-                                        <p> 
-                                            Był to pierwszy "większy" projekt w c++ 
+                                        <p>
+                                            Był to pierwszy "większy" projekt w c++
                                         </p>
                                     </span>
                                 </div>
                             </div>
                             <div class="slide">
-                                <h2><a href="https://bit.ly/3cYLR1U" target="_blank">Wisielec</a></h2>
+                                <h2><a href="https://github.com/Billypl/Hangman" target="_blank">Wisielec</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/hangman.mp4"></video>
                                     <span>
-                                        <p> <a href="https://bit.ly/3cYLR1U" target="_blank"> Wisielec </a> jest znaną wszystkim grą. Dopóki ludzik 
-                                            nie zawiśnie na szubienicy, gra ciągle się toczy. 
+                                        <p> <a href="https://github.com/Billypl/Hangman" target="_blank"> Wisielec </a>
+                                            jest znaną
+                                            wszystkim grą. Dopóki ludzik
+                                            nie zawiśnie na szubienicy, gra ciągle się toczy.
                                         </p>
-                                        <p> 
+                                        <p>
                                             Poszczególne "sprite'y" ludzika i szubienicy są wczytywane
                                             z wcześniej spreparowanych plików tekstowych.
                                         </p>
-                                        <p> 
+                                        <p>
                                             Tą grę zaprogramowałem rozszerzalnie, tzn. można dodwać tyle plików
                                             z hasłami, ile tylko dusza zapragnie - program będzie mógł wylosować
                                             każde z nowych haseł.
                                         </p>
-                                    </span>                                
+                                    </span>
                                 </div>
                             </div>
                             <div class="slide">
-                                <h2><a href="https://bit.ly/319NwQ3" target="_blank">Wąż</a></h2>
+                                <h2><a href="https://github.com/Billypl/ConsoleSnake" target="_blank">Wąż</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/snake.mp4"></video>
                                     <span>
-                                        <p> Kultowy <a href="https://bit.ly/319NwQ3" target="_blank"> wąż </a> 
+                                        <p> Kultowy <a href="https://github.com/Billypl/ConsoleSnake" target="_blank">
+                                                wąż </a>
                                             był zdecydowanie największym wyzwaniem jakiego podjąłem się do
                                             zaprogramowania, szczególnie, że wybrałem do tego po raz kolejny
                                             konsolę.
                                         </p>
-                                        <p> 
+                                        <p>
                                             Oprócz dynamcznej zmiany kierunków, jest również funkcjonalne menu,
                                             z takimi zakładkami jak "ostatnie gry" czy "najlepsze wyniki"
                                         </p>
@@ -183,15 +174,19 @@
                                 </div>
                             </div>
                             <div class="slide">
-                                <h2><a href="https://github.com/Billypl/Ascii-Generator" target="_blank">Ascii generator</a></h2>
+                                <h2><a href="https://github.com/Billypl/Ascii-Generator" target="_blank">Ascii
+                                        generator</a></h2>
                                 <div class="project">
                                     <video autoplay muted loop src="projects/ascii generator.mp4"></video>
                                     <span>
-                                        <p> Wiele razy każdy z nas widział obrazy zrobione z tekstu, tak zwane 
-                                        "ascii art". Ale przerabianie zdjęć na ich "tekstowe odpowiedniki" to też ciekawy pomysł.
-                                        </p> 
-                                        <p> <a href="https://github.com/Billypl/Ascii-Generator" target="_blank"> 
-                                            Ascii art generator</a> korzysta on z biblioteki do pobierania danych ze zdjęć (nie jestem samobójcą, żeby samemu implementować tą konwersję :P) i wyświetla na ekranie (oraz zapisuje do pliku tekstowego) jego odpowiednik.
+                                        <p> Wiele razy każdy z nas widział obrazy zrobione z tekstu, tak zwane
+                                            "ascii art". Ale przerabianie zdjęć na ich "tekstowe odpowiedniki" to też
+                                            ciekawy pomysł.
+                                        </p>
+                                        <p> <a href="https://github.com/Billypl/Ascii-Generator" target="_blank">
+                                                Ascii art generator</a> korzysta on z biblioteki do pobierania danych ze
+                                            zdjęć (nie jestem samobójcą, żeby samemu implementować tą konwersję :P) i
+                                            wyświetla na ekranie (oraz zapisuje do pliku tekstowego) jego odpowiednik.
                                         </p>
                                     </span>
                                 </div>
@@ -201,12 +196,31 @@
                                 <div class="project">
                                     <video autoplay muted loop src="projects/pokeBot.mp4"></video>
                                     <span>
-                                        <p> Nuda może przynieść wiele ciekawych pomysłów. Takim jak właśnie 
-                                            <a  href="https://github.com/Billypl/PokeBot" target="_blank"> 
-                                            PokeBot</a> , który został zainspirowany możliwością irytowania moich znajomych ciągłymi zaczepkami.
-                                        </p> 
-                                        <p> 
-                                            Wystarczy najechać na zaczepkę, kilkąć klawisz <i style="color:rgb(175, 55, 55)">insert</i> i cieszyć się automatycznymi zaczepkami.   
+                                        <p> Nuda może przynieść wiele ciekawych pomysłów. Takim jak właśnie
+                                            <a href="https://github.com/Billypl/PokeBot" target="_blank">
+                                                PokeBot</a> , który został zainspirowany możliwością irytowania moich
+                                            znajomych ciągłymi zaczepkami.
+                                        </p>
+                                        <p>
+                                            Wystarczy najechać na zaczepkę, kilkąć klawisz <i
+                                                style="color:rgb(175, 55, 55)">insert</i> i cieszyć się automatycznymi
+                                            zaczepkami.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <h2><a href="https://github.com/Billypl/Makao" target="_blank">Makao</a></h2>
+                                <div class="project">
+                                    <video autoplay muted loop src="projects/makao.mp4"></video>
+                                    <span>
+                                        <p> Gra <a href="https://github.com/Billypl/Makao" target="_blank">makao</a> w
+                                            konsoli to projekt napisany dla znajomej ze studiów, jeszcze przed moim
+                                            zaczęciem studiowania.
+                                        </p>
+                                        <p>
+                                            Na początku gry można wybrać ilość sterowanych przez komputer oraz zwykłych
+                                            graczy. Interfejs graficzny użwa znaków ANSI w celu kolorowania konsoli.
                                         </p>
                                     </span>
                                 </div>
@@ -214,12 +228,6 @@
                             <span class="sButton" onclick="NextPrevButton(1)"> &#10095;</span>
                         </div>
                         <div id="buttons">
-                            <span class="sDot" onclick="chooseSlide(0)"></span>
-                            <span class="sDot" onclick="chooseSlide(1)"></span>
-                            <span class="sDot" onclick="chooseSlide(2)"></span>
-                            <span class="sDot" onclick="chooseSlide(3)"></span>
-                            <span class="sDot" onclick="chooseSlide(4)"></span>
-                            <span class="sDot" onclick="chooseSlide(5)"></span>
                         </div>
                     </div>
             </section>
@@ -227,23 +235,31 @@
 
         <div class="Wave">
             <div class="multiWave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"></path>
                 </svg>
             </div>
         </div>
 
         <div class="content">
-            <section  id="more">
+            <section id="more">
                 <h1>WIĘCEJ</h1>
                 <div>
                     <h2>Znajomość języków programowania</h2>
                     <ul>
-                        <li> <h3>Rodzina C</h3>
+                        <li>
+                            <h3>Rodzina C</h3>
                             <ul>
-                                <li class="progress"> 
+                                <li class="progress">
                                     <h4>C++</h4>
                                 </li>
                                 <li class="progress">
@@ -251,7 +267,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li> <h3>Frontendowe</h3>
+                        <li>
+                            <h3>Frontendowe</h3>
                             <ul>
                                 <li class="progress">
                                     <h4>HTML</h4>
@@ -264,7 +281,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li> <h3>Backendowe</h3>
+                        <li>
+                            <h3>Backendowe</h3>
                             <ul>
                                 <li class="progress">
                                     <h4>SQL</h4>
@@ -282,42 +300,43 @@
 
     <div class="skewFooter">
         <div class="skew">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
             </svg>
         </div>
     </div>
 
-    
+
     <footer>
-        <div class="social-media"> 
+        <div class="social-media">
             <h2>Social Media</h2>
             <p>Na tych social mediach można mnie czasami znaleźć ;)</p>
             <ul class="socials">
                 <li><a href="https://steamcommunity.com/profiles/76561198155660760/" target="_blank" title="Steam">
-                    <i class="fab fa-steam"></i></a>
+                        <i class="fab fa-steam"></i></a>
                 </li>
                 <li><a href="https://www.instagram.com/billy.pl/" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i></a>
+                        <i class="fab fa-instagram"></i></a>
                 </li>
                 <li><a href="https://www.facebook.com/profile.php?id=100007338151525" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook"></i></a>
+                        <i class="fab fa-facebook"></i></a>
                 </li>
                 <li><a href="https://github.com/Billypl" target="_blank" title="Github">
-                    <i class="fab fa-github"></i></a>
+                        <i class="fab fa-github"></i></a>
                 </li>
-            </ul>    
+            </ul>
         </div>
         <div class="contact" id="kontakt">
             <h2>Kontakt</h2>
             <p>Jeśli potrzebny jest szybki i bezpośredni kontakt polecam się tutaj</p>
             <div>
                 <span><i class="fas fa-phone"></i></span>
-                <span>+48 664 626 600</span>
+                <span><a href="tel:+48664626600">+48 664 626 600</a></span>
             </div>
             <div>
                 <span><i class="fas fa-envelope"></i></span>
-                <span>kriper01@wp.pl</span>
+                <span><a href="mailto:name@email.com"> billy.d3v@gmail.com</a></span>
             </div>
             <div>
                 <span><i class="fas fa-map-marker-alt"></i></span>
@@ -326,4 +345,5 @@
         </div>
     </footer>
 </body>
+
 </html>
